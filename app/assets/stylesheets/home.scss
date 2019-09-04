@@ -2,15 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "spectre";
-// Home Page
-// body {
-//     background: #000;
-// }
-//// Nav
-.logo {
-    width: 100px;
-    padding-top: 10px;
-}
+@import "globals/global";
 
 .random__bg {
     background-repeat: none;
@@ -23,4 +15,51 @@
     text-align: center;
     color: white;
     height: 100vh;
+    margin-top: -95px;
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0; right: 0;
+        top: 0; bottom: 6px;
+        background: rgba(0,0,0,.5);
+    }
+    .hero-body{
+        position: relative;
+        padding-top: 400px;
+        text-align: left;
+        z-index: 1;
+    }
+}
+
+.check_us_out{
+    background: $dark-gray;
+    padding-top: 10%;
+    color: $white;
+    h1{
+        text-align: center;
+        color: $white;
+        margin-bottom: 5px;
+    }
+    p{
+        text-align: center;
+        margin-bottom: 8%;
+    }
+    .lms_card{
+        margin-bottom: 40px;
+        .lms-card__content{
+            padding: 2rem;
+            border-radius: 4px;
+            background: $card-gray;
+            h3{
+                font-weight: 700;
+                letter-spacing: 5px;
+                margin-bottom: 5px;
+            }
+            .content__icons{
+                margin-top: 15px;
+                margin-right: 10px;
+                max-width: 20px;
+            }
+        }
+    }
 }

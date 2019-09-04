@@ -1,0 +1,30 @@
+@import "variables";
+
+.container{
+  padding-left: 5.5rem;
+  padding-right: 5.5rem;
+}
+.navbar{
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  .navbar-section{
+    width: 30%;
+    line-height: 5.5;
+    display: block;
+    flex: none;
+    a{
+      color: $white;
+      font-weight: 700;
+    }
+  }
+  .logo {
+    width: 200px;
+  }
+  .first-section{
+    text-align: right;
+  }
+  .second-section{
+    text-align: left;
+  }
+}

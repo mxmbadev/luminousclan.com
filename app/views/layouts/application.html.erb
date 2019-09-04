@@ -4,23 +4,23 @@
     <title>LuminousclanCom</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <header class="navbar">
-      <section class="navbar-section">
-        <a href="#" class="btn btn-link">Docs</a>
-        <a href="#" class="btn btn-link">Examples</a>
+      <section class="navbar-section first-section">
+        <a href="#" class="btn btn-link">Check Us Out</a>
+        <a href="#" class="btn btn-link">Members</a>
       </section>
       <section class="navbar-center">
-        <%= image_tag  "lms_logo_web.png", class: "img-responsive logo" %>
+        <%= image_tag  "lms_logo_web-2.png", class: "img-responsive logo" %>
       </section>
-      <section class="navbar-section">
-        <a href="#" class="btn btn-link">Twitter</a>
-        <a href="#" class="btn btn-link">GitHub</a>
+      <section class="navbar-section second-section">
+        <a href="#" class="btn btn-link">#LuminousggsRC</a>
+        <a href="#" class="btn btn-link">Contact Us</a>
       </section>
     </header>
     <%= yield %>
