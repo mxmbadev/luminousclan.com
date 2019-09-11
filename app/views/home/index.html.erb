@@ -17,9 +17,10 @@
       </div>
       <div class="column col-12">
         <div class="columns">
+        <% @users.each do |member| %>
           <div class="column col-4 col-xs-12 lms_card">
             <div class="lms-card__content">
-              <h3>Mxmba_</h3>
+              <h3><%= member.username %></h3>
               <h5>Leader / Competitive Team Leader</h5>
               <div class="social-links">
                 <%= image_tag "icons/twitch-white.png", class: "content__icons"%>
@@ -28,61 +29,7 @@
               </div>
             </div>
           </div>
-          <div class="column col-4 col-xs-12 lms_card">
-            <div class="lms-card__content">
-              <h3>Mxmba_</h3>
-              <h5>Leader / Competitive Team Leader</h5>
-              <div class="social-links">
-                <%= image_tag "icons/twitch-white.png", class: "content__icons"%>
-                <%= image_tag "icons/mixer-white.png", class: "content__icons"%>
-                <%= image_tag "icons/instagram-white.png", class: "content__icons"%>
-              </div>
-            </div>
-          </div>
-          <div class="column col-4 col-xs-12 lms_card">
-            <div class="lms-card__content">
-              <h3>Mxmba_</h3>
-              <h5>Leader / Competitive Team Leader</h5>
-              <div class="social-links">
-                <%= image_tag "icons/twitch-white.png", class: "content__icons"%>
-                <%= image_tag "icons/mixer-white.png", class: "content__icons"%>
-                <%= image_tag "icons/instagram-white.png", class: "content__icons"%>
-              </div>
-            </div>
-          </div>
-          <div class="column col-4 col-xs-12 lms_card">
-            <div class="lms-card__content">
-              <h3>Mxmba_</h3>
-              <h5>Leader / Competitive Team Leader</h5>
-              <div class="social-links">
-                <%= image_tag "icons/twitch-white.png", class: "content__icons"%>
-                <%= image_tag "icons/mixer-white.png", class: "content__icons"%>
-                <%= image_tag "icons/instagram-white.png", class: "content__icons"%>
-              </div>
-            </div>
-          </div>
-          <div class="column col-4 col-xs-12 lms_card">
-            <div class="lms-card__content">
-              <h3>Mxmba_</h3>
-              <h5>Leader / Competitive Team Leader</h5>
-              <div class="social-links">
-                <%= image_tag "icons/twitch-white.png", class: "content__icons"%>
-                <%= image_tag "icons/mixer-white.png", class: "content__icons"%>
-                <%= image_tag "icons/instagram-white.png", class: "content__icons"%>
-              </div>
-            </div>
-          </div>
-          <div class="column col-4 col-xs-12 lms_card">
-            <div class="lms-card__content">
-              <h3>Mxmba_</h3>
-              <h5>Leader / Competitive Team Leader</h5>
-              <div class="social-links">
-                <%= image_tag "icons/twitch-white.png", class: "content__icons"%>
-                <%= image_tag "icons/mixer-white.png", class: "content__icons"%>
-                <%= image_tag "icons/instagram-white.png", class: "content__icons"%>
-              </div>
-            </div>
-          </div>
+        <% end %>
         </div>
       </div>
     </div>
