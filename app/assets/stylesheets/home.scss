@@ -1,7 +1,7 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import "spectre";
+@import "bootstrap";
 @import "globals/global";
 
 .random__bg {
@@ -54,6 +54,7 @@
                 font-weight: 700;
                 letter-spacing: 5px;
                 margin-bottom: 5px;
+                word-wrap: break-word;
             }
             .content__icons{
                 margin-top: 15px;

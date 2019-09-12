@@ -17,8 +17,8 @@ gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
-# Spectre Sass Framework
-gem 'spectre_scss'
+# Bootstrap CSS Framework
+gem 'bootstrap', '~> 4.3.1'
 #jQuery Rails
 gem 'jquery-rails'
 # Devise for Users
