@@ -1,25 +1,33 @@
 // Brand Colors
 $white: #fff;
 $black: #000;
+$teal: #00B0B9;
 $dark-gray: #323232;
 $card-gray: #222222;
 $light-gray: #cececece;
 
 //fonts
 body{
-  font-family: 'Oswald', sans-serif;
+  font-family: Lato, sans-serif;
   letter-spacing: 2px;
 }
 
 // Font-Sizes
 h1{
   font-size: 53px;
+  font-family: 'Oswald', sans-serif;
 }
+
+h3{
+  font-family: 'Oswald', sans-serif;
+}
+
 h5{
   font-size: 14px;
   font-weight: 400;
   color: $light-gray;
 }
+
 p{
   font-family: Lato;
 

@@ -3,28 +3,36 @@
 .container{
   padding-left: 5.5rem;
   padding-right: 5.5rem;
+  max-width: 1440px;
+  
 }
-.navbar{
+.nav{
   z-index: 1;
   position: relative;
   width: 100%;
-  .navbar-section{
-    width: 30%;
-    line-height: 5.5;
-    display: block;
-    flex: none;
-    a{
-      color: $white;
-      font-weight: 700;
-    }
+  a{
+    color: $white;
+    font-family: lato;
   }
   .logo {
     width: 200px;
   }
-  .first-section{
-    text-align: right;
-  }
-  .second-section{
-    text-align: left;
+}
+
+#notice-wrapper{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 1050;
+  background: $teal;
+  p{
+    padding: 1.5rem 0;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 100;
+    color: #fff;
+    letter-spacing: 2px;
   }
 }

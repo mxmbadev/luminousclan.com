@@ -10,22 +10,34 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <% if notice %>
+    <div id="notice-wrapper">
+      <p class="notice"><%= notice %></p>
+    </div>
+  <%elsif alert%>
+    <div id="notice-wrapper">
+      <p class="alert"><%= alert %></p>
+    </div>
+  <%end%>
+
   <body>
-    <header class="navbar">
-      <section class="navbar-section first-section">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
         <a href="#" class="btn btn-link">Check Us Out</a>
+      </li>
+      <li class="nav-item">
         <a href="#" class="btn btn-link">Members</a>
-      </section>
-      <section class="navbar-center">
-        <%= image_tag  "lms_logo_web-2.png", class: "img-responsive logo" %>
-      </section>
-      <section class="navbar-section second-section">
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><%= image_tag  "lms_logo_web-2.png", class: "img-responsive logo" %></a>
+      </li>
+      <li class="nav-item">
         <a href="#" class="btn btn-link">#LuminousggsRC</a>
+      </li>
+      <li class="nav-item">
         <a href="#" class="btn btn-link">Contact Us</a>
-      </section>
-    </header>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+      </li>
+    </ul>
     <%= yield %>
   </body>
   <footer>
