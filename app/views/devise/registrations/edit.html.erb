@@ -23,16 +23,38 @@
     <%= f.text_field :username, autofocus: true, autocomplete: "username", required: true %>
   </div>
 
+
   <div class="field">
     <%= f.label :birthdate %><br />
     <%= f.date_field :birthdate, autofocus: true, autocomplete: "username", required: true %>
   </div>
- 
-  <%# birthdate goes here %>
 
   <div class="field">
     <%= f.label :bio %><br />
     <%= f.text_area :bio, autofocus: true, autocomplete: "About yourself (optional)" %>
+  </div>
+
+  <h3>Social Media</h3>
+  <p>Enter your social media usernames</p>
+  <div class="field">
+    <%= f.label :twitch %><br />
+    <%= f.text_field :twitch, autofocus: true, autocomplete: "twitch" %>
+  </div>
+  <div class="field">
+    <%= f.label :mixer %><br />
+    <%= f.text_field :mixer, autofocus: true, autocomplete: "mixer" %>
+  </div>
+  <div class="field">
+    <%= f.label :youtube %><br />
+    <%= f.text_field :youtube, autofocus: true, autocomplete: "youtube" %>
+  </div>
+  <div class="field">
+    <%= f.label :instagram %><br />
+    <%= f.text_field :instagram, autofocus: true, autocomplete: "instagram" %>
+  </div>
+  <div class="field">
+    <%= f.label :twitter %><br />
+    <%= f.text_field :twitter, autofocus: true, autocomplete: "twitter" %>
   </div>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>

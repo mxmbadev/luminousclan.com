@@ -18,14 +18,42 @@
       <div class="column col-12">
         <div class="columns">
         <% @users.each do |member| %>
-          <div class="column col-4 col-xs-12 lms_card">
+          <div class="column col-4 col-md-6 col-xs-12 lms_card">
             <div class="lms-card__content">
               <h3><%= member.username %></h3>
               <h5>Leader / Competitive Team Leader</h5>
               <div class="social-links">
-                <%= image_tag "icons/twitch-white.png", class: "content__icons"%>
-                <%= image_tag "icons/mixer-white.png", class: "content__icons"%>
-                <%= image_tag "icons/instagram-white.png", class: "content__icons"%>
+                
+                <% if member.twitch.present? %>
+                  <a href="<%= member.twitch %>" target="_blank">
+                    <%= image_tag "icons/twitch-white.png", class: "content__icons"%>
+                  </a>
+                <% end %>
+
+                <% if member.mixer.present? %>
+                  <a href="<%= member.mixer %>" target="_blank" rel="noopener noreferrer">
+                    <%= image_tag "icons/mixer-white.png", class: "content__icons"%>
+                  </a>
+                <% end %>
+
+                <% if member.youtube.present? %>
+                  <a href="<%= member.youtube %>" target="_blank" rel="noopener noreferrer">
+                    <%= image_tag "icons/yt-white.png", class: "content__icons"%>
+                  </a>
+                <% end %>
+                
+                <% if member.instagram.present? %>
+                  <a href="<%= member.instagram %>" target="_blank" rel="noopener noreferrer">
+                    <%= image_tag "icons/instagram-white.png", class: "content__icons"%>
+                  </a>
+                <% end %>
+                
+                <% if member.twitter.present? %>
+                  <a href="<%= member.twitter %>" target="_blank" rel="noopener noreferrer">
+                    <%= image_tag "icons/twitter-white.png", class: "content__icons"%>
+                  </a>
+                <% end %>
+
               </div>
             </div>
           </div>
