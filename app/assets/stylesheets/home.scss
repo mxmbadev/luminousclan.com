@@ -1,7 +1,6 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import "bootstrap";
 @import "globals/global";
 
 .random__bg {
@@ -28,6 +27,16 @@
         padding-top: 400px;
         text-align: left;
         z-index: 1;
+        h3{
+            margin-left: 20px;
+            font-style: italic;
+            font-family: 'Lato', sans-serif;
+        }
+        h1{
+            font-size: 75px;
+            font-style: italic;
+            font-weight: 700;
+        }
     }
 }
 

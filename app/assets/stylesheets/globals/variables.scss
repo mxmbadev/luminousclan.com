@@ -1,3 +1,4 @@
+@import "bootstrap";
 // Brand Colors
 $white: #fff;
 $black: #000;
@@ -8,14 +9,14 @@ $light-gray: #cececece;
 
 //fonts
 body{
-  font-family: Lato, sans-serif;
+  font-family: 'Lato', sans-serif;
   letter-spacing: 2px;
 }
 
 // Font-Sizes
 h1{
   font-size: 53px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif !important;
 }
 
 h3{
@@ -30,5 +31,12 @@ h5{
 
 p{
   font-family: Lato;
+}
 
+.btn-primary {
+  @include button-variant($teal, darken($teal, 7.5%), darken($teal, 10%), lighten($teal,5%), lighten($teal, 10%), darken($teal,30%));
+}
+
+.btn-outline-primary {
+  @include button-outline-variant($teal, #222222, lighten($teal,5%), $teal);
 }
